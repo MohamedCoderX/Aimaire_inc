@@ -13,6 +13,7 @@ const CTABanner = () => {
         alt="CTA Banner Background"
         fill
         priority
+        loading='lazy'
         className="object-cover object-center rounded-full"
       />
 

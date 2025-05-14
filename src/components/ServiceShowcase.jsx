@@ -141,6 +141,7 @@ const ServiceShowcase = () => {
                     src={service.image}
                     alt={service.title}
                     fill
+                    loading="lazy"
                     className="object-cover transition group-hover:scale-105 duration-300"
                   />
                 </div>

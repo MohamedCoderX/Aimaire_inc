@@ -97,6 +97,7 @@ const Products = () => {
                       src={item.image}
                       alt={item.name}
                       fill
+                      loading="lazy"
                       className="object-cover rounded-t-xl hover:scale-110 transition-transform duration-500 ease-in-out"
                     />
                   </div>

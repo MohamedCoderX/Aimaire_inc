@@ -78,6 +78,7 @@ const Page = () => {
                 src={service.image}
                 alt={service.title}
                 fill
+                loading='lazy'
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
               />
             </div>

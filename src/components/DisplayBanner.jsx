@@ -10,6 +10,7 @@ const DisplayBanner = ({ title, description, image }) => {
         alt="Display Models Banner"
         fill
         priority
+        loading='lazy'
         className="object-cover object-center"
       />
 

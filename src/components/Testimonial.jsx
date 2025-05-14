@@ -152,7 +152,8 @@ const Testimonial = () => {
             layout="fill"
             objectFit="cover"
             className="rounded-xl relative"
-            priority
+       
+            loading="lazy"
           />
         </div>
  

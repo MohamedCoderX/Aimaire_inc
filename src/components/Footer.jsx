@@ -18,6 +18,7 @@ export default function Footer() {
               alt="Aimaire Logo"
               width={200}
               height={100}
+              loading="lazy"
             />
           </div>
           <p className="text-sm text-gray-300 leading-relaxed">

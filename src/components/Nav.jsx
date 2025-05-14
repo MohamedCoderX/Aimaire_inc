@@ -36,6 +36,7 @@ const Nav = () => {
           <img
             src={isScrolled ? "/logo.png" : "/logo-1.png"}
             alt="logo"
+            loading='eager'
             className="md:h-15 h-10 transition-all pb-2"
           />
         </Link>

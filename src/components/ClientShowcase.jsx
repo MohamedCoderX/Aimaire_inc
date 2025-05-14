@@ -60,6 +60,7 @@ const ClientShowcase = () => {
                   alt={client.name}
                   width={100}
                   height={100}
+                  loading="lazy"
                   className="object-contain rounded-md max-h-full max-w-full"
                 />
               </div>

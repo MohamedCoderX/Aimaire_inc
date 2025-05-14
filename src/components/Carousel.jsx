@@ -1,9 +1,12 @@
 "use client";
+
+import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { Download04Icon } from "@hugeicons/core-free-icons";
+import Image from "next/image";
 
 const Carousel = () => {
   const slides = [
@@ -51,23 +54,33 @@ const Carousel = () => {
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-         <div className="w-full h-[85vh] md:h-screen bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: `url(${slide.image})` }}>
-            <div className="bg-black/60 w-full h-full flex flex-col items-center justify-center text-center text-white px-4 pt-16 md:px-20 md:pt-32">
-  <h2 className="text-2xl md:text-5xl lg:text-8xl font-bold mb-2 md:mb-6 max-w-7xl">
-    {slide.title}
-  </h2>
-  <p className="mb-4 md:mb-10 text-sm md:text-lg  open">
-    {slide.text}
-  </p>
-  <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-    <button className="flex bg-[#292a62] px-6 py-3 text-md md:text-base rounded-lg text-white hover:bg-white hover:text-black transition">
-      {slide.buttonText1} 
-    </button>
-    <button className="bg-white px-6 py-3 text-md md:text-base rounded-lg text-black transition flex hover:bg-black hover:text-white">
-      {slide.buttonText2 } <HugeiconsIcon icon={Download04Icon} />
-    </button>
-  </div>
-</div>
+          <div className="relative w-full h-[85vh] md:h-screen">
+            {/* Optimized Image */}
+            <Image
+              src={slide.image}
+              alt={slide.title}
+              fill
+              priority={index === 0} // eager load only the first slide image
+              sizes="100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center text-center text-white px-4 pt-16 md:px-20 md:pt-32">
+              <h2 className="text-2xl md:text-5xl lg:text-8xl font-bold mb-2 md:mb-6 max-w-7xl">
+                {slide.title}
+              </h2>
+              <p className="mb-4 md:mb-10 text-sm md:text-lg open">
+                {slide.text}
+              </p>
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+                <button className="flex bg-[#292a62] px-6 py-3 text-md md:text-base rounded-lg text-white hover:bg-white hover:text-black transition">
+                  {slide.buttonText1}
+                </button>
+                <button className="bg-white px-6 py-3 text-md md:text-base rounded-lg text-black transition flex items-center gap-2 hover:bg-black hover:text-white">
+                  {slide.buttonText2}
+                  <HugeiconsIcon icon={Download04Icon} />
+                </button>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
       ))}

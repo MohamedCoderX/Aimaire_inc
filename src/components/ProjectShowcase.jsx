@@ -58,6 +58,7 @@ const ProjectShowcase = () => {
                     src={proj.image}
                     alt={proj.title}
                     fill
+                    loading='lazy'
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
 
