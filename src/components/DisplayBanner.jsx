@@ -9,7 +9,7 @@ const DisplayBanner = ({ title, description, image }) => {
         src={image}
         alt="Display Models Banner"
         fill
-        priority
+  
         loading='lazy'
         className="object-cover object-center"
       />
