@@ -34,7 +34,7 @@ const Nav = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <img
-            src={isScrolled ? "/logo.png" : "/logo-1.png"}
+            src={isScrolled ? "/logo.png" : "/logoremove.png"}
             alt="logo"
             loading='eager'
             className="md:h-15 h-10 transition-all pb-2"
