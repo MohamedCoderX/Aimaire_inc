@@ -16,7 +16,8 @@ const projects = [
 
 const ProjectShowcase = () => {
   return (
-    <section className="bg-[#292a62] py-20 px-4 md:px-12 text-white">
+    <section className={`bg-[#292a62] py-20 px-4 md:px-12 text-white`}>
+      
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">

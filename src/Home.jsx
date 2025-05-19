@@ -21,7 +21,7 @@ const Home = () => {
         <Products/>
         <WorkingSteps/>
         <Testimonial/>
-        <ProjectShowcase/>
+        <ProjectShowcase />
         <Contactus/>
         <Footer/>
     </div>

@@ -11,42 +11,49 @@ import {
 import DisplayBanner from '@/components/DisplayBanner';
 import Footer from '@/components/Footer';
 import CTABanner from '@/components/CTABanner';
+import Link from 'next/link';
 
 const services = [
   {
     title: "Retail Display",
     subtitle: "Design & Fabrication",
     image: "/services/retail-1.jpeg",
+    link:'/retail',
     icon: LightBulbIcon,
   },
   {
     title: "Commercial Kitchen",
     subtitle: "Planning & Equipment Supply",
     image: "/services/kitchen-1.jpg",
+    link:'/kitchen',
     icon: Cog6ToothIcon,
   },
   {
     title: "Custom Kiosks",
     subtitle: "& Karts",
     image: "/services/kart.png",
+    link:'/kiosk',
     icon: TruckIcon,
   },
   {
     title: "Supermarket Racks",
     subtitle: "& Impulse Racks",
     image: "/services/supermarket.jpg",
+    link:'/supermarket',
     icon: ShoppingCartIcon,
   },
   {
     title: "Refrigeration",
     subtitle: "Solutions",
     image: "/services/refrigerator.jpeg",
+    link:'/refrigeration',
     icon: CubeIcon,
   },
   {
     title: "Full Franchise Setup",
     subtitle: "(Franchise Plus)",
     image: "/services/franchise.jpeg",
+    link:'/franchise',
     icon: BuildingStorefrontIcon,
   },
 ];
@@ -68,6 +75,7 @@ const Page = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {services.map((service, index) => (
+          <Link href={service.link}>
           <div
             key={index}
             className="relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group"
@@ -96,6 +104,7 @@ const Page = () => {
               </h3>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </section>
