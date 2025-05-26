@@ -1,10 +1,11 @@
-// app/layout.tsx
+
 
 import { Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
 import Nav from '@/components/Nav';
 import Sidebar from '@/components/Sidebar';
 import Script from 'next/script';
+import Head from 'next/head';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -16,52 +17,27 @@ const openSans = Open_Sans({
   variable: '--font-open-sans',
 });
 
-export const metadata = {
-  title: "Aimaire Inc | Commercial Kitchen & Interior Design Experts",
-  description:
-    "Aimaire Inc provides expert interior design, retail display solutions, and commercial kitchen setups in Salem, Bangalore, and across India.",
-  keywords: [
-    "Interior Design Salem",
-    "Commercial Kitchen Equipment Bangalore",
-    "Display Solutions",
-    "Aimaire Inc",
-    "Climair Inc",
-  ],
-  openGraph: {
-    title: "Aimaire Inc",
-    description:
-      "Experts in commercial kitchen setups, interior design, and retail solutions. Based in Salem and Bangalore.",
-    url: "https://aimaireinc.com",
-    images: [
-      {
-        url: "https://aimaireinc.com/images/og-banner.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Aimaire Inc Showcase",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Aimaire Inc",
-    description:
-      "Professional solutions for commercial interiors, kitchen equipment, and display models.",
-    images: ["https://aimaireinc.com/images/twitter-banner.png"],
-  },
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        {/* Favicon */}
+      <Head>
+        <title>Aimaire Inc | Commercial Kitchen & Interior Design Experts</title>
+        <meta name="description" content="Aimaire Inc provides expert interior design, retail display solutions, and commercial kitchen setups in Salem, Bangalore, and across India." />
+        <meta name="keywords" content="Interior Design Salem, Commercial Kitchen Equipment Bangalore, Display Solutions, Aimaire Inc, Climair Inc" />
+        <meta property="og:title" content="Aimaire Inc" />
+        <meta property="og:description" content="Experts in commercial kitchen setups, interior design, and retail solutions. Based in Salem and Bangalore." />
+        <meta property="og:url" content="https://aimaireinc.com" />
+        <meta property="og:image" content="https://aimaireinc.com/images/og-banner.jpg" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Aimaire Inc" />
+        <meta name="twitter:description" content="Professional solutions for commercial interiors, kitchen equipment, and display models." />
+        <meta name="twitter:image" content="https://aimaireinc.com/images/twitter-banner.png" />
         <link rel="icon" href="/favicon.ico" />
-      </head>
+      </Head>
+
       <body className={`${montserrat.variable} ${openSans.variable} antialiased`}>
-        {/* JSON-LD for Local Business Structured Data */}
+        {/* JSON-LD for Local Business Schema */}
         <Script
           type="application/ld+json"
           id="structured-data"
@@ -90,7 +66,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-
+        
         <Nav />
         <Sidebar />
         {children}
