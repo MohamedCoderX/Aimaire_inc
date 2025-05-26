@@ -60,7 +60,7 @@ const Contactus = () => {
               </label>
               <input
                 type="text"
-                placeholder="your name..."
+ 
                 className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
                 required
               />
@@ -71,7 +71,7 @@ const Contactus = () => {
               </label>
               <input
                 type="tel"
-                placeholder="Phone"
+  
                 className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
                 required
               />
@@ -85,7 +85,7 @@ const Contactus = () => {
               </label>
               <input
                 type="email"
-                placeholder="your E-mail..."
+
                 className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
                 required
               />
@@ -96,7 +96,7 @@ const Contactus = () => {
               </label>
               <input
                 type="tel"
-                placeholder="Phone"
+      
                 className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
                 required
               />
@@ -108,10 +108,11 @@ const Contactus = () => {
               </label>
     <select name="service" id="" className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black">
     <option value="">Select Service</option>
-    <option value="service1">Service 1</option>
-    <option value="service2">Service 2</option>
-    <option value="service3">Service 3</option>
-    <option value="service4">Service 4</option>
+    <option value="service1">Retail Store designing</option>
+    <option value="service2">Customized Display Counters</option>
+    <option value="service3">Retail Racks & Wall Racks</option>
+    <option value="service4">Interior Job works</option>
+    <option value="service5">Commercial Kitchen Equipment</option>
     </select>
 </div>
           <div className="space-y-2">
@@ -120,7 +121,7 @@ const Contactus = () => {
             </label>
             <textarea
               rows="5"
-              placeholder="Your Message"
+        
               className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
               required
             />

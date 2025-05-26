@@ -23,7 +23,7 @@ const Sidebar = () => {
 
       {/* Instagram Icon */}
       <a 
-        href="https://instagram.com/yourprofile" 
+        href="https://www.instagram.com/aimaire_inc?igsh=MWZjamoybmRicmJ2bw==" 
         target="_blank" 
         rel="noopener noreferrer"
         className="text-red-500 hover:scale-110 transition-transform duration-200">

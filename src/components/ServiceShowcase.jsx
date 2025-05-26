@@ -28,11 +28,11 @@ const services = [
     image: "/services/supermarket.jpg",
     description: "Impulse racks and optimized shelving for modern supermarkets.",
   },
-  {
-    title: "Refrigeration Solutions",
-    image: "/services/refrigerator.jpeg",
-    description: "Reliable and efficient cold storage & display systems.",
-  },
+  // {
+  //   title: "Refrigeration Solutions",
+  //   image: "/services/refrigerator.jpeg",
+  //   description: "Reliable and efficient cold storage & display systems.",
+  // },
   {
     title: "Franchise Setup",
     image: "/services/franchise.jpeg",

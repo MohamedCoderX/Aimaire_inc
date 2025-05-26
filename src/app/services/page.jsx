@@ -42,13 +42,13 @@ const services = [
     link:'/supermarket',
     icon: ShoppingCartIcon,
   },
-  {
-    title: "Refrigeration",
-    subtitle: "Solutions",
-    image: "/services/refrigerator.jpeg",
-    link:'/refrigeration',
-    icon: CubeIcon,
-  },
+  // {
+  //   title: "Refrigeration",
+  //   subtitle: "Solutions",
+  //   image: "/services/refrigerator.jpeg",
+  //   link:'/refrigeration',
+  //   icon: CubeIcon,
+  // },
   {
     title: "Full Franchise Setup",
     subtitle: "(Franchise Plus)",
@@ -75,7 +75,7 @@ const Page = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {services.map((service, index) => (
-          <Link href={service.link}>
+          <Link href={service.link} key={index}>
           <div
             key={index}
             className="relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group"

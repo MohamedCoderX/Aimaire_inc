@@ -159,7 +159,7 @@ const Testimonial = () => {
  
       </div>
       {/* <img src="/quote.png" width={400} alt=""  className="absolute right-0"/> */}
-      <ClientShowcase/>
+      {/* <ClientShowcase/> */}
     </section>
   );
 };

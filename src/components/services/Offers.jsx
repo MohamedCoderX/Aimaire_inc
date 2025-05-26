@@ -22,7 +22,7 @@ const Offers = ({offers,title,description}) => {
       </div>
 
       {/* Cards */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+      <div className={`relative z-10 grid grid-cols-1 sm:grid-cols-2 ${offers.length == 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"} gap-10 max-w-7xl mx-auto `}>
         {offers.map((step, index) => (
           <div
             key={index}

@@ -1,6 +1,5 @@
 "use client";
-
-import dynamic from "next/dynamic";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -72,9 +71,11 @@ const Carousel = () => {
                 {slide.text}
               </p>
               <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+                <Link href="/contact">
                 <button className="flex bg-[#292a62] px-6 py-3 text-md md:text-base rounded-lg text-white hover:bg-white hover:text-black transition">
                   {slide.buttonText1}
                 </button>
+                </Link>
                 <button className="bg-white px-6 py-3 text-md md:text-base rounded-lg text-black transition flex items-center gap-2 hover:bg-black hover:text-white">
                   {slide.buttonText2}
                   <HugeiconsIcon icon={Download04Icon} />

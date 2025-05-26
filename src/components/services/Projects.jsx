@@ -26,19 +26,7 @@ const Projects = ({ projects, sectionTitle, sectionDescription }) => {
                 alt={project.title}
                 className="w-full h-56 object-cover rounded-t-xl"
               />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#292a62] mb-2">
-                  {project.title}
-                </h3>
-                {project.description && (
-                  <p className="text-gray-600 text-sm mb-2">{project.description}</p>
-                )}
-                {project.tag && (
-                  <span className="inline-block text-xs px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full">
-                    {project.tag}
-                  </span>
-                )}
-              </div>
+              
             </div>
           ))}
         </div>

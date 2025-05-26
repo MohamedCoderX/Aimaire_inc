@@ -95,20 +95,17 @@ const page = () => {
   
   const retailProjects = [
     {
-      title: "Modern Bakery Setup",
-      description: "Full bakery interior with modular displays and smart lighting.",
+      
       image: "/projects/bakery1.jpeg",
       tag: "Bakery",
     },
     {
-      title: "Retail Store Concept",
-      description: "Custom retail store designed for maximum visibility and flow.",
+      
       image: "/projects/retail1.jpeg",
       tag: "Retail",
     },
     {
-      title: "POS & Branding Area",
-      description: "Integrated branding with optimized checkout experience.",
+     
       image: "/projects/branding1.jpeg",
       tag: "POS Design",
     },
