@@ -8,10 +8,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const projects = [
-  { title: 'Interior work', tag: 'Interior', image: '/banner/restaurnant.jpg' },
-  { title: 'Luxury Kitchen', tag: 'Kitchen', image: '/banner/kitchen.jpg' },
+  { title: 'Interior work', tag: 'Interior', image: '/interior/interior-1.jpg' },
+  { title: 'Luxury Kitchen', tag: 'Kitchen', image: '/kitchen/kit-4.webp' },
   { title: 'Display Model', tag: 'Display', image: '/products/aimaire.png' },
-  { title: 'Retail Display', tag: 'Retail', image: '/banner/retail.jpeg' },
+  { title: 'Retail Display', tag: 'Retail', image: '/retail/re-5.jpg' },
 ];
 
 const ProjectShowcase = () => {

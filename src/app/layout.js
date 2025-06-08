@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="https://aimaireinc.com/images/og-banner.jpg" />
         <meta property="og:url" content="https://aimaireinc.com" />
         <meta property="og:type" content="website" />
+        <meta property="og:see_also" content="https://www.facebook.com/aimaireinc" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

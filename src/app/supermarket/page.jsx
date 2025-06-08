@@ -115,29 +115,36 @@ const SupermarketRacksPage = () => {
 
   const projects = [
     {
-      title: "Compact Grocery Format",
-      description: "Gondola and end-cap system for kirana-style stores.",
-      image: "/projects/super1.jpeg",
-      tag: "Mini Mart",
+     
+
+      image: "/racks/retail-1.jpg",
+     
     },
     {
-      title: "Bakery + Retail Fusion",
-      description: "Stylish SS display for sweets integrated within general store flow.",
-      image: "/projects/super2.jpeg",
-      tag: "Bakery Racks",
+
+      image: "/racks/retail-2.jpeg",
+      
     },
     {
-      title: "LED FMCG Display",
-      description: "Modern illuminated racks for convenience store fast movers.",
-      image: "/projects/super3.jpeg",
-      tag: "FMCG",
+     
+      image: "/racks/retail-3.jpg",
+
+    },
+    {
+      image: "/racks/retail-4.jpg",
+    },
+    {
+      image: "/racks/retail-5.jpg",
+    },  
+    {
+      image: "/racks/retail-6.jpeg",
     },
   ]
 
   return (
     <div>
       <DisplayBanner
-        title="Supermarket Display Systems"
+        title="Impulse Racks & Display Systems"
         description="Custom modular shelving engineered to increase visibility, optimize layout, and accelerate sales."
         image="/banner/supermarket.jpeg"
       />
@@ -167,7 +174,7 @@ const SupermarketRacksPage = () => {
         description="Our racks do more than hold products — they drive performance, simplify operations, and support your brand."
       />
       <Projects
-        sectionTitle="Recent Supermarket Rack Projects"
+        sectionTitle="Explore Racks for all usages"
         sectionDescription="Explore some of our tailored supermarket setups — from compact grocers to dynamic FMCG zones."
         projects={projects}
       />

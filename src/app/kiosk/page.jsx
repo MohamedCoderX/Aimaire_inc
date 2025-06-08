@@ -94,17 +94,32 @@ const page = () => {
   const retailProjects = [
     {
       
-      image: "/kiosk/food.jpeg",
+      image: "/kiosk/kiosk-3.jpeg",
       tag: "Bakery",
     },
     {
       
-      image: "/kiosk/cofee.jpeg",
+      image: "/kiosk/kiosk-4.jpeg",
       tag: "Retail",
     },
     {
      
-      image: "/kiosk/juice.jpeg",
+      image: "/kiosk/kiosk-5.jpeg",
+      tag: "POS Design",
+    },
+    {
+     
+      image: "/kiosk/kiosk-7.jpeg",
+      tag: "POS Design",
+    },
+    {
+     
+      image: "/kiosk/kiosk-8.jpeg",
+      tag: "POS Design",
+    },
+    {
+     
+      image: "/kiosk/kiosk06.jpeg",
       tag: "POS Design",
     },
   ];
@@ -160,7 +175,7 @@ const page = () => {
   description={"Not just displays — Aimaire delivers immersive, high-performance environments that sell."} 
 />
       <Projects
-      sectionTitle="Commercial Kioks Solution Projects"
+      sectionTitle="Custom Kiosk Solution Projects"
       sectionDescription="Explore our diverse range of projects that showcase our expertise in creating functional and stylish commercial kitchen solutions."
       projects={retailProjects}
     />

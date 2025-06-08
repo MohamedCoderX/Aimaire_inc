@@ -5,6 +5,12 @@ import { FaWhatsapp, FaPhoneAlt, FaInstagram } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className="fixed right-0 top-1/2 transform -translate-y-1/2 md:right-4 bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center space-y-6 z-50">
+        <a 
+        href="tel:+919092038636" 
+        className="text-blue-600 hover:scale-110 transition-transform duration-200">
+        <FaPhoneAlt className="md:h-7 h-4 w-3 md:w-6" />
+      </a>
+
       {/* WhatsApp Icon */}
       <a 
         href="https://wa.me/+919500721544" 
@@ -15,12 +21,7 @@ const Sidebar = () => {
       </a>
 
       {/* Phone Icon */}
-      <a 
-        href="tel:+919092038636" 
-        className="text-blue-600 hover:scale-110 transition-transform duration-200">
-        <FaPhoneAlt className="md:h-7 h-4 w-3 md:w-6" />
-      </a>
-
+    
       {/* Instagram Icon */}
       <a 
         href="https://www.instagram.com/aimaire_inc?igsh=MWZjamoybmRicmJ2bw==" 

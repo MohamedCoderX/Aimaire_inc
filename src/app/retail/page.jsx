@@ -90,23 +90,29 @@ const page = () => {
   ];
   const retailProjects = [
     {
-      title: "Modern Bakery Setup",
-      description: "Full bakery interior with modular displays and smart lighting.",
-      image: "/projects/bakery1.jpeg",
-      tag: "Bakery",
+     
+      image: "/retail/re-5.jpg",
+    
     },
     {
-      title: "Retail Store Concept",
-      description: "Custom retail store designed for maximum visibility and flow.",
-      image: "/projects/retail1.jpeg",
-      tag: "Retail",
+      
+      image: "/retail/re-7.jpg",
+     
     },
     {
-      title: "POS & Branding Area",
-      description: "Integrated branding with optimized checkout experience.",
-      image: "/projects/branding1.jpeg",
-      tag: "POS Design",
+      
+      image: "/retail/re-9.jpeg",
+      
     },
+    {
+        image:"/retail/re-11.jpg"
+    },
+    {
+      image:"/retail/re-10.jpg"
+  },
+  {
+    image:"/retail/re-2.jpg"
+},
   ];
   const features = [
     {
@@ -138,7 +144,7 @@ const page = () => {
     <WorkProcess steps={steps}/>
       <SupplyChain features={features} title={" Redefining Retail Through Precision, Speed & Strategy"} description={"Not just displays — Aimaire delivers immersive, high-performance environments that sell."}/>
       <Projects
-      sectionTitle="Retail Store Projects"
+      sectionTitle="Explore Retail Store Projects"
       sectionDescription="Explore our recent store setups, retail environments, and custom interior builds."
       projects={retailProjects}
     />

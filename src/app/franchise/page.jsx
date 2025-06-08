@@ -161,11 +161,11 @@ const FranchisePlusPage = () => {
         title="Why Choose Aimaire for Franchise Setup"
         description="We don’t just build outlets—we build systems. Systems that grow with you, perform consistently, and scale fast."
       />
-      <Projects
+      {/* <Projects
         sectionTitle="Franchise Rollouts by Aimaire"
         sectionDescription="Explore sample franchise setups we’ve delivered across regions. Placeholder images available where confidentiality applies."
         projects={projects}
-      />
+      /> */}
       <Call
         title="Planning a Franchise Rollout?"
         description="Let’s co-create your next franchise success story. From prototype to pan-India expansion, Aimaire is your launch partner."

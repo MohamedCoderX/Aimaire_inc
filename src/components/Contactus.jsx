@@ -3,7 +3,17 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Mail02Icon } from "@hugeicons/core-free-icons";
 import { AddressBookIcon } from "@hugeicons/core-free-icons";
 import { CallIcon } from "@hugeicons/core-free-icons";
+import { useForm, ValidationError } from '@formspree/react';
 const Contactus = () => {
+  const [state, handleSubmit] = useForm("mqabejlp");
+
+  if (state.succeeded) {
+    return (
+      <p className="text-green-600 text-xl font-semibold">
+        Thanks for your message! We'll be in touch soon.
+      </p>
+    );
+  }
   return (
     <div className=" bg-white px-6 py-20 lg:px-20 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -37,7 +47,7 @@ const Contactus = () => {
               <span className="bg-gray-100 p-2 rounded-full"><HugeiconsIcon icon={CallIcon} /></span>
               <div>
                 <p className="font-semibold text-lg">PHONE NUMBER</p>
-                <p className="text-gray-700">+31 123 456 789 – Office</p>
+                <p className="text-gray-700"> 9500721544 / 9092038636</p>
               </div>
             </div>
 
@@ -45,96 +55,118 @@ const Contactus = () => {
               <span className="bg-gray-100 p-2 rounded-full"><HugeiconsIcon icon={AddressBookIcon} /></span>
               <div>
                 <p className="font-semibold text-lg">OUR ADDRESS</p>
-                <p className="text-gray-700">6954 bin broug road, NY</p>
+                <p className="text-gray-700">1/82/C -Ramasamy street,
+Sanniyasi gundu
+Salem -636015
+</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Right Side - Contact Form */}
-        <form className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="block text-lg font-medium text-gray-700">
-                Your Name (required)
-              </label>
-              <input
-                type="text"
- 
-                className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="block text-lg font-medium text-gray-700">
-                Your Phone (required)
-              </label>
-              <input
-                type="tel"
-  
-                className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
-                required
-              />
-            </div>
-          </div>
+        <form className="space-y-6" onSubmit={handleSubmit}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
+          <label className="block text-lg font-medium text-gray-700">
+            Your Name (required)
+          </label>
+          <input
+            type="text"
+            name="name"
+            className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
+            required
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="block text-lg font-medium text-gray-700">
+            Your Phone (required)
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
+            required
+          />
+        </div>
+      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="block text-lg font-medium text-gray-700">
-                Your E-mail (required)
-              </label>
-              <input
-                type="email"
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
+          <label className="block text-lg font-medium text-gray-700">
+            Your E-mail (required)
+          </label>
+          <input
+            type="email"
+            name="email"
+            className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
+            required
+          />
+        </div>
+        <div className="space-y-2">
+          <label className="block text-lg font-medium text-gray-700">
+            Alternate Phone (required)
+          </label>
+          <input
+            type="tel"
+            name="alt_phone"
+            className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
+            required
+          />
+        </div>
+      </div>
 
-                className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="block text-lg font-medium text-gray-700">
-                Your Phone (required)
-              </label>
-              <input
-                type="tel"
-      
-                className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
-                required
-              />
-            </div>
-          </div>
-<div>
-<label className="block text-lg font-medium text-gray-700">
-                Select Service You Required (required)
-              </label>
-    <select name="service" id="" className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black">
-    <option value="">Select Service</option>
-    <option value="service1">Retail Store designing</option>
-    <option value="service2">Customized Display Counters</option>
-    <option value="service3">Retail Racks & Wall Racks</option>
-    <option value="service4">Interior Job works</option>
-    <option value="service5">Commercial Kitchen Equipment</option>
-    </select>
-</div>
-          <div className="space-y-2">
-            <label className="block text-lg font-medium text-gray-700">
-              Message (required)
-            </label>
-            <textarea
-              rows="5"
-        
-              className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
-              required
-            />
-          </div>
+      <div className="space-y-2">
+        <label className="block text-lg font-medium text-gray-700">
+          Select Service You Require (required)
+        </label>
+        <select
+          name="service"
+          className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
+          required
+        >
+          <option value="">Select Service</option>
+          <option value="Retail Store designing">Retail Store designing</option>
+          <option value="Customized Display Counters">
+            Customized Display Counters
+          </option>
+          <option value="Retail Racks & Wall Racks">
+            Retail Racks & Wall Racks
+          </option>
+          <option value="Interior Job works">Interior Job works</option>
+          <option value="Commercial Kitchen Equipment">
+            Commercial Kitchen Equipment
+          </option>
+        </select>
+      </div>
 
-          
-          <button
-            type="submit"
-            className="bg-[#16403f] text-white text-xl px-6 py-3 rounded-md hover:bg-[#133734]"
-          >
-            Get in touch
-          </button>
-        </form>
+      <div className="space-y-2">
+        <label className="block text-lg font-medium text-gray-700">
+          Message (required)
+        </label>
+        <textarea
+          rows="5"
+          name="message"
+          className="block w-full rounded-md border-none bg-[#fbf4ea] p-2 placeholder-black"
+          required
+        />
+      </div>
+
+      <ValidationError
+        prefix="Message"
+        field="message"
+        errors={state.errors}
+        className="text-red-600"
+      />
+
+      <button
+        type="submit"
+        disabled={state.submitting}
+        className="bg-[#16403f] text-white text-xl px-6 py-3 rounded-md hover:bg-[#133734]"
+      >
+        Get in touch
+      </button>
+    </form>
       </div>
     </div>
   );

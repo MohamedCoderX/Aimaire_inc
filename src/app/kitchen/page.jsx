@@ -49,22 +49,22 @@ const page = () => {
         {
           title: "Bakery Refrigeration",
           description: "Pastry chillers, dough retarders, and undercounter units — built for professional bakery setups.",
-          image: "/bakery-refrigeration.jpg",
+          image: "/kitchen/kit-11.webp",
         },
         {
           title: "Restaurant Kitchens",
           description: "Upright freezers, prep counters, and blast chillers for high-performance kitchens.",
-          image: "/restaurant-kitchen.jpg",
+          image: "/kitchen/kit-8.webp",
         },
         {
           title: "Canteen Cooling",
           description: "Bulk milk chillers and cold storage for high-volume institutional kitchens.",
-          image: "/canteen-cooling.jpg",
+          image: "/kitchen/kit-3.jpg",
         },
         {
           title: "Retail Displays",
           description: "Glass-door coolers, deep freezers, and countertop chillers for modern retail.",
-          image: "/retail-cooling.jpg",
+          image: "/kitchen/kit-1.jpeg",
         },
       ];
       
@@ -96,18 +96,33 @@ const page = () => {
   const retailProjects = [
     {
       
-      image: "/projects/bakery1.jpeg",
-      tag: "Bakery",
+      image: "/kitchen/kit-4.webp",
+      
     },
     {
       
-      image: "/projects/retail1.jpeg",
-      tag: "Retail",
+      image: "/kitchen/kit-5.jpg",
+ 
     },
     {
      
-      image: "/projects/branding1.jpeg",
-      tag: "POS Design",
+      image: "/kitchen/kit-8.webp",
+     
+    },
+    {
+     
+      image: "/kitchen/kit-10.jpg",
+     
+    },
+    {
+     
+      image: "/kitchen/kit-7.jpg",
+     
+    },
+    {
+     
+      image: "/kitchen/kit-6.jpg",
+     
     },
   ];
   const features = [
@@ -131,7 +146,7 @@ const page = () => {
   
   return (
     <div>
- <DisplayBanner title={"Coomercial Kitchen Solutions"} description={"From precision workflow design to NSF-certified equipment, we build kitchens that boost speed, safety, and ROI."} image={"/services/kitchen-1.jpg"}/>
+ <DisplayBanner title={"Commercial Kitchen Solutions"} description={"From precision workflow design to NSF-certified equipment, we build kitchens that boost speed, safety, and ROI."} image={"/services/kitchen-1.jpg"}/>
        <Hero title={"Commercial Kitchens Engineered for Performance"} description={"Transform your retail space into a powerful brand experience with our fully customized store design and display solutions. We specialize in creating smart, functional, and visually stunning interiors that maximize product visibility, customer flow, and sales."} image={"/products/cooking.jpeg"} image2={"/products/perp.jpeg"}/>
        <OverviewSection subtitle="Overview"
       title="End-to-End Commercial kitchen Solutions"
@@ -141,12 +156,12 @@ const page = () => {
     <WorkProcess steps={steps}/>
       <SupplyChain features={features} title={" Redefining Retail Through Precision, Speed & Strategy"} description={"Not just displays — Aimaire delivers immersive, high-performance environments that sell."}/>
       <Projects
-      sectionTitle="Commercial Kitchen Solution Projects"
-      sectionDescription="Explore our diverse range of projects that showcase our expertise in creating functional and stylish commercial kitchen solutions."
+      sectionTitle="Commercial Kitchen Solution Products"
+      sectionDescription="Explore our diverse range of products that showcase our expertise in creating functional and stylish commercial kitchen solutions."
       projects={retailProjects}
     />
      
-     <Call title={"Ready to elevate Coommercial Kitchen ? "} description={"Get in touch with us today to discuss your project and discover how we can help you that captivates customers and drives sales."}/>
+     <Call title={"Ready to elevate Commercial Kitchen ? "} description={"Get in touch with us today to discuss your project and discover how we can help you that captivates customers and drives sales."}/>
      
      <Footer/>
     </div>
