@@ -29,10 +29,13 @@ export default function WhoWeAre() {
           <div className="space-y-3">
             <p className="text-[#292a62] font-semibold">We specialize in:</p>
             {[
-              "Supermarkets & retail chains",
-              "Cloud kitchens & QSRs",
-              "Franchise outlets",
-              "Specialty food and beverage businesses"
+             
+              	"Display Counters: Bakery, sweets, hot & cold, gelato, custom designs",
+              "Refrigeration Units: Chillers, freezers, saladettes, undercounter coolers",
+              	"Retail Fixtures: Wall racks, impulse racks, supermarket shelves, kiosks",
+              "Commercial Kitchen: SS equipment, exhausts, worktables, full setup",
+              	"Franchise Setup: Complete outlet design, brand support, POS integration",
+              "Custom Fabrication: SS/PVD work, food carts, display props, branding units",
             ].map((item, idx) => (
               <div key={idx} className="flex items-start space-x-3 group transition-transform hover:translate-x-1 duration-300">
                 <div className="w-2 h-2 mt-2 bg-[#292a62] rounded-full" />

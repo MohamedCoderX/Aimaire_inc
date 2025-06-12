@@ -14,42 +14,42 @@ const page = () => {
       tagline: 'Simple, efficient, and budget-friendly',
       description:
         'Ideal for startups or small-scale stores. Basic Plus delivers reliable performance with straightforward usability and minimal cost.',
-      image: '/products/basicplus.jpeg',
+      image: '/products/basic-plus.jpeg',
     },
     {
       name: 'Aimaire Show',
       tagline: 'Sleek visibility for impactful merchandising',
       description:
         'Designed for visual impact, this model maximizes product visibility and draws attention to highlight key offerings.',
-      image: '/products/aimaire.png',
+      image: '/products/aimaire-show.jpeg',
     },
     {
       name: 'Elegant Pro',
       tagline: 'A blend of aesthetics and performance',
       description:
         'Combines premium finishes with high-function features, perfect for modern retail spaces seeking sophistication.',
-      image: '/products/elegantpro.jpeg',
+      image: '/products/elegant-pro.jpg',
     },
     {
       name: 'Prime Max',
       tagline: 'Premium design with smart functionality',
       description:
         'Loaded with intelligent design features like modular shelving and lighting — tailored for high-end setups.',
-      image: '/products/prime-max.jpeg',
+      image: '/products/prime.jpg',
     },
     {
       name: 'Aspiro Top',
       tagline: 'Rugged, heavy-duty solutions for retail',
       description:
         'Built for durability and heavy use in demanding environments. Ideal for warehouse retail or rugged display needs.',
-      image: '/products/aspirotop.jpeg',
+      image: '/products/aspira-top.jpg',
     },
     {
       name: 'Geloto Chief',
       tagline: 'Specialized for gelato ice cream display',
       description:
         'Optimized for temperature control and product appeal, this unit is crafted for artisan gelato and dessert shops.',
-      image: '/products/galetto.png',
+      image: '/products/galetto.jpg',
     },
   ];
 
@@ -106,6 +106,9 @@ const page = () => {
           ))}
         </div>
       </section>
+      <button className="flex bg-[#292a62] px-6 py-3 text-md md:text-base rounded-lg text-white hover:bg-white hover:text-black transition mx-auto">
+                  Download Display model pdf
+                </button>
 <CTABanner/>
       <Footer />
     </div>
