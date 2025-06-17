@@ -10,8 +10,7 @@ const About = () => {
       <div className="relative w-full lg:w-1/3">
         <Image src="/about/aboutimg.jpg" alt="about" width={200} height={100} className='rounded-t-full w-full object-cover' />
         <div className="bg-yellow-400 text-white hover:bg-yellow-700 duration-700 p-8 w-[200px] h-[200px] text-center rounded-t-full border-8 absolute -bottom-10 right-1/2 translate-x-1/2 lg:translate-x-0 lg:bottom-16 lg:right-[-5rem] border-white flex flex-col justify-center items-center">
-          <h1 className='text-4xl font-bold'>70%</h1>
-          <p className='pt-2 text-xl font-semibold'>Happy Customer</p>
+        
         </div>
       </div>
 
