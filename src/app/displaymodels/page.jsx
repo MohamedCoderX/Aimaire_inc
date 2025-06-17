@@ -1,13 +1,14 @@
 'use client';
-import DisplayBanner from '@/components/DisplayBanner';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SparklesIcon } from '@heroicons/react/24/outline';
+import { SparklesIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import Head from 'next/head';
+import DisplayBanner from '@/components/DisplayBanner';
 import Footer from '@/components/Footer';
 import CTABanner from '@/components/CTABanner';
 
-const page = () => {
+const Page = () => {
   const models = [
     {
       name: 'Basic Plus',
@@ -55,15 +56,21 @@ const page = () => {
 
   return (
     <div>
+      <Head>
+        <title>Signature Display Models | Aimaire Inc.</title>
+        <meta
+          name="description"
+          content="Explore Aimaire Inc's exclusive range of commercial display systems — engineered for performance, design, and retail excellence."
+        />
+      </Head>
+
       <DisplayBanner
-        title={'Explore Our Signature Display Systems'}
-        description={
-          'Crafted to elevate your business presentation — each model designed for visual appeal, durability, and optimal functionality.'
-        }
-        image={'/displaybanner.jpeg'}
+        title="Explore Our Signature Display Systems"
+        description="Crafted to elevate your business presentation — each model designed for visual appeal, durability, and optimal functionality."
+        image="/displaybanner.jpeg"
       />
 
-      <section className="bg-white text-[#292a62] py-24 px-6 md:px-16 ">
+      <section className="bg-white text-[#292a62] py-24 px-6 md:px-16">
         <div className="text-center mb-16 max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold mb-3">
             Our <span className="">Signature Display Systems</span>
@@ -88,14 +95,14 @@ const page = () => {
                   src={model.image}
                   alt={model.name}
                   fill
-                  loading='lazy'
+                  loading="lazy"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition duration-300" />
               </div>
 
               <div className="p-6">
-                <div className="flex items-center gap-3 text-yellow-400 bg-[#292a62] max-w-fit px-4 py-2  rounded-full mb-3">
+                <div className="flex items-center gap-3 text-yellow-400 bg-[#292a62] max-w-fit px-4 py-2 rounded-full mb-3">
                   <SparklesIcon className="w-5 h-5" />
                   <p className="uppercase text-sm font-semibold tracking-wider">{model.name}</p>
                 </div>
@@ -105,14 +112,24 @@ const page = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* DOWNLOAD BUTTON */}
+        <div className="mt-16 text-center">
+          <a
+            href="/pdfs/display-models.pdf" // <- Replace with actual PDF path
+            download
+            className="inline-flex items-center gap-2 bg-[#292a62] text-white text-lg px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black transition-all"
+          >
+            <ArrowDownTrayIcon className="w-5 h-5" />
+            Download Display Model PDF
+          </a>
+        </div>
       </section>
-      <button className="flex bg-[#292a62] px-6 py-3 text-md md:text-base rounded-lg text-white hover:bg-white hover:text-black transition mx-auto">
-                  Download Display model pdf
-                </button>
-<CTABanner/>
+
+      <CTABanner />
       <Footer />
     </div>
   );
 };
 
-export default page;
+export default Page;

@@ -1,4 +1,5 @@
 'use client';
+import Head from 'next/head';
 import Image from 'next/image';
 import {
   LightBulbIcon,
@@ -61,6 +62,11 @@ const services = [
 const Page = () => {
   return (
    <div>
+          <Head>
+        <title>Services | Aimaire Inc - Commercial Setup Experts</title>
+        <meta name="description" content="Explore our complete commercial solutions including retail displays, commercial kitchen equipment, kiosks, supermarket racks, and franchise setup." />
+      </Head>
+
     <DisplayBanner title={"Services We Offer"} description="Comprehensive solutions for your commercial needs." image="/banner/design.jpg" />
      <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto text-center mb-16">

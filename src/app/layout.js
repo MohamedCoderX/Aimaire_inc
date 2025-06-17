@@ -3,46 +3,56 @@ import './globals.css';
 import Nav from '@/components/Nav';
 import Sidebar from '@/components/Sidebar';
 import Script from 'next/script';
-import Head from 'next/head';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
+  display: 'swap',
 });
 
 const openSans = Open_Sans({
   subsets: ['latin'],
   variable: '--font-open-sans',
+  display: 'swap',
 });
+
+export const metadata = {
+  title: 'Aimaire Inc | Bakery, Kitchen Equipment & Franchise Setup Manufacturer in India',
+  description: 'Aimaire Inc is a trusted provider of bakery counters, kitchen equipment, and full franchise setups with expert interior design across India.',
+  keywords: [
+    'Aimaire Inc',
+    'Bakery Display Counters',
+    'Commercial Kitchen Equipment',
+    'Franchise Setup India',
+    'Interior Design Salem',
+    'Climaire Alternative',
+    'Display Racks',
+    'Kitchen Setup Bangalore',
+  ],
+  openGraph: {
+    title: 'Aimaire Inc | Bakery & Kitchen Setup Experts',
+    description: 'Top manufacturer of bakery displays, retail counters, and commercial setups in India. Explore our custom display solutions.',
+    images: ['https://aimaireinc.com/images/og-banner.jpg'],
+    url: 'https://aimaireinc.com',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aimaire Inc | Display & Kitchen Equipment Experts',
+    description: 'Retail & Franchise Display Experts. Build your bakery or restaurant setup with Aimaire.',
+    images: ['https://aimaireinc.com/images/twitter-banner.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Head>
-        <title>Aimaire Inc | Bakery, Kitchen Equipment & Franchise Setup Manufacturer in India</title>
-        <meta name="description" content="Aimaire Inc is a leading manufacturer of bakery counters, commercial kitchen equipment, and full franchise setups with interior design expertise across India." />
-        <meta name="keywords" content="Aimaire Inc, Commercial Kitchen Setup, Bakery Display Manufacturer, Franchise Setup India, Climaire Alternative, Display Racks, Interior Design Salem, Kitchen Equipment Bangalore" />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Aimaire Inc | Bakery & Kitchen Setup Experts" />
-        <meta property="og:description" content="Top manufacturer of bakery displays, retail counters, and full commercial setups in India. Explore our custom display solutions." />
-        <meta property="og:image" content="https://aimaireinc.com/images/og-banner.jpg" />
-        <meta property="og:url" content="https://aimaireinc.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:see_also" content="https://www.facebook.com/aimaireinc" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Aimaire Inc | Display & Kitchen Equipment Experts" />
-        <meta name="twitter:description" content="Retail & Franchise Display Experts. Build your bakery or restaurant setup with Aimaire." />
-        <meta name="twitter:image" content="https://aimaireinc.com/images/twitter-banner.png" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <body className={`${montserrat.variable} ${openSans.variable} antialiased`}>
-        {/* JSON-LD for Local Business Schema */}
+    <html lang="en" className="scroll-smooth">
+      <body className={`${montserrat.variable} ${openSans.variable} antialiased bg-white text-[#292a62]`}>
+        {/* Structured Data */}
         <Script
           type="application/ld+json"
           id="structured-data"
@@ -52,7 +62,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Aimaire Inc",
-              description: "Bakery & commercial kitchen equipment manufacturer offering display counters, franchise design, and setup services in India.",
+              description:
+                "Bakery & commercial kitchen equipment manufacturer offering display counters, franchise design, and setup services in India.",
               image: "https://aimaireinc.com/logo.png",
               telephone: "+91-9876543210",
               email: "info@aimaireinc.com",
@@ -62,20 +73,27 @@ export default function RootLayout({ children }) {
                 addressLocality: "Salem",
                 addressRegion: "Tamil Nadu",
                 postalCode: "636001",
-                addressCountry: "IN"
+                addressCountry: "IN",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "11.6643",
+                longitude: "78.1460",
               },
               url: "https://aimaireinc.com",
               sameAs: [
                 "https://www.instagram.com/aimaire_inc",
-                "https://www.facebook.com/aimaireinc"
-              ]
+                "https://www.facebook.com/aimaireinc",
+              ],
+              priceRange: "₹₹",
             }),
           }}
         />
 
         <Nav />
         <Sidebar />
-        {children}
+
+        <main>{children}</main>
       </body>
     </html>
   );
