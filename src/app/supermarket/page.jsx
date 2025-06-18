@@ -42,12 +42,12 @@ const SupermarketRacksPage = () => {
     {
       title: "Gondola Racks",
       description: "Ideal for small supermarkets and kirana stores, built for compact layouts.",
-      image: "/racks/gondola.jpeg",
+      image: "/racks/gondola-1.jpeg",
     },
     {
       title: "End-Cap Displays",
       description: "Perfect for impulse and high-margin items placed at aisle ends.",
-      image: "/racks/endcap.jpeg",
+      image: "/racks/endcap-1.jpeg",
     },
     {
       title: "Pegboard Shelving",
@@ -62,7 +62,7 @@ const SupermarketRacksPage = () => {
     {
       title: "SS PVD Racks",
       description: "Elegant racks for sweets and bakery display, crafted with durability and shine.",
-      image: "/racks/sspvd.jpeg",
+      image: "/racks/sspvd-1.jpeg",
     },
   ]
 

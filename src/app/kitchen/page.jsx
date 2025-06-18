@@ -57,14 +57,14 @@ const page = () => {
           image: "/kitchen/kit-8.webp",
         },
         {
-          title: "Canteen Cooling",
+          title: "Chillers & freezers",
           description: "Bulk milk chillers and cold storage for high-volume institutional kitchens.",
-          image: "/kitchen/kit-3.jpg",
+          image: "/kitchen/chiller.jpeg",
         },
         {
-          title: "Retail Displays",
+          title: "Cold room storage racks ",
           description: "Glass-door coolers, deep freezers, and countertop chillers for modern retail.",
-          image: "/kitchen/kit-1.jpeg",
+          image: "/kitchen/cold.jpeg",
         },
       ];
       
