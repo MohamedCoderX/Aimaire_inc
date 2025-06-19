@@ -151,8 +151,8 @@ const SupermarketRacksPage = () => {
       <Hero
         title="Shelving Systems that Sell More"
         description="Unlock higher sales per square foot with our modular retail shelving systems, engineered to enhance customer traffic flow, maximize SKU visibility, and simplify restocking. From gondolas to LED-lit impulse displays, every fixture is built to support faster planogram resets, seamless inventory rotation, and smarter merchandising — so your retail space works harder, every day."
-        image="/racks/gondola.jpeg"
-        image2="/racks/gondola.jpeg"
+        image="/racks/super-1.jpeg"
+        image2="/racks/super-2.jpeg"
       />
       <OverviewSection
         subtitle="Overview"
