@@ -116,7 +116,7 @@ const Page = () => {
         {/* DOWNLOAD BUTTON */}
         <div className="mt-16 text-center">
           <a
-            href="/pdfs/display-models.pdf" // <- Replace with actual PDF path
+            href="/Display models brouchure.pdf" // <- Replace with actual PDF path
             download
             className="inline-flex items-center gap-2 bg-[#292a62] text-white text-lg px-6 py-3 rounded-lg hover:bg-yellow-400 hover:text-black transition-all"
           >

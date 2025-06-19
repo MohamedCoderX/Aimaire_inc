@@ -76,10 +76,14 @@ const Carousel = () => {
                   {slide.buttonText1}
                 </button>
                 </Link>
-                <button className="bg-white px-6 py-3 text-md md:text-base rounded-lg text-black transition flex items-center gap-2 hover:bg-black hover:text-white">
-                  {slide.buttonText2}
-                  <HugeiconsIcon icon={Download04Icon} />
-                </button>
+                <a
+  href="/Aimaire-inc-brouchure .pdf"
+  download
+  className="bg-white px-6 py-3 text-md md:text-base rounded-lg text-black transition flex items-center gap-2 hover:bg-black hover:text-white"
+>
+  {slide.buttonText2}
+  <HugeiconsIcon icon={Download04Icon} />
+</a>
               </div>
             </div>
           </div>
