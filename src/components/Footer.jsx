@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="mb-4">
             <Image
               src="/logoremove.png"
-              alt="Aimaire Logo"
+              alt="Aimaire inc Logo"
               width={200}
               height={100}
               loading="lazy"

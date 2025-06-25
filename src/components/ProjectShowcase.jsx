@@ -57,7 +57,7 @@ const ProjectShowcase = () => {
                 <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg group cursor-pointer">
                   <Image
                     src={proj.image}
-                    alt={proj.title}
+                    alt={`aimaire inc ${proj.title}`}
                     fill
                     loading='lazy'
                     className="object-cover transition-transform duration-500 group-hover:scale-105"

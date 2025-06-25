@@ -53,7 +53,7 @@ export default function WhoWeAre() {
           <div className="overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500 max-w-md">
             <img
               src="/about.png"
-              alt="Design mockup"
+              alt="aimaire inc Design mockup"
               loading="lazy"
               className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700 ease-in-out"
             />

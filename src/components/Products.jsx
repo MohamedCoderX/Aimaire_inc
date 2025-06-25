@@ -6,26 +6,10 @@ import { motion } from "framer-motion";
 import { ArrowUpRight02Icon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
 
-const displaySystems = [
-  {
-    name: "Prime Max",
-    desc: "A premium design with smart functionality for high-end visibility.",
-    image: "/products/prime-max.jpeg",
-  },
-  {
-    name: "Geloto Chief",
-    desc: "Specialized for gelato and ice cream display.",
-    image: "/products/Galetto.png",
-  },
-  {
-    name: "Aimaire Show",
-    desc: "Sleek and modern displays for effective merchandising.",
-    image: "/products/aimaire.png",
-  },
-];
+
 
 const kitchenEquipments = [
-  { name: "Cooking Ranges & Ovens", image: "/products/cooking.jpeg" },
+  { name: "Cooking Ranges & Ovens", image: "/kitchen/rst.jpg" },
   { name: "Refrigeration Systems", image: "/products/refrigertaor.jpeg" },
   { name: "Prep Tables & Countertops", image: "/products/perp.jpeg" },
 ];
@@ -53,7 +37,7 @@ const Products = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-16 text-[#292a62]">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +57,7 @@ const Products = () => {
         </div>
 
         {/* Display Systems Carousel */}
-        <motion.div
+        {/* <motion.div
         //  initial={{ opacity: 0, y: 40 }} 
         //  whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}>
@@ -109,7 +93,7 @@ const Products = () => {
               ))}
             </div>
           </div>
-        </motion.div>
+        </motion.div>  */}
 
         {/* Kitchen Equipment Grid */}
         <motion.div
@@ -129,7 +113,7 @@ const Products = () => {
                 <div className="relative w-full h-60">
                   <Image
                     src={equip.image}
-                    alt={equip.name}
+                    alt={`aimaire inc ${equip.name}`}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
                   />

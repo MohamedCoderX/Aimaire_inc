@@ -10,28 +10,28 @@ import Image from "next/image";
 const Carousel = () => {
   const slides = [
     {
-      title: "Tailored Interior & Equipment Solutions",
+      title: "Aimaire inc Tailored Interior & Equipment Solutions",
       text: "We specialize in custom interior designs and fully-equipped setups for bakeries, restaurants, and commercial spaces.",
       buttonText1: "Contact Us",
       buttonText2: "Download Brochure",
       image: "/banner/restaurnant.jpg",
     },
     {
-      title: "Complete Commercial Kitchen & Display Systems",
+      title: "Complete Commercial Kitchen & Display Systems by Aimaire inc",
       text: "Outfit your business with high-quality, fully integrated kitchen systems and display models.",
       buttonText1: "Get Started",
       buttonText2: "Request Brochure",
       image: "/banner/kitchen.jpg",
     },
     {
-      title: "Complete Store Setup & Franchise Solutions",
+      title: "Complete Store Setup & Franchise Solutions by Aimaire inc",
       text: "Start your franchise with confidence. We handle everything from custom designs to essential equipment.",
       buttonText1: "Contact Us",
       buttonText2: "Download Brochure",
       image: "/banner/retail.jpeg",
     },
     {
-      title: "Comprehensive Design & Equipment Solutions",
+      title: "Comprehensive Design & Equipment Solutions by Aimaire inc",
       text: "We offer custom design models and top-tier equipment for all types of foodservice establishments.",
       buttonText1: "Explore Solutions",
       buttonText2: "Download Brochure",
@@ -57,7 +57,7 @@ const Carousel = () => {
             {/* Optimized Image */}
             <Image
               src={slide.image}
-              alt={slide.title}
+              alt={`aimaire inc ${slide.title}`}
               fill
               priority={index === 0} // eager load only the first slide image
               sizes="100vw"

@@ -8,7 +8,7 @@ const About = () => {
     <section className='px-6 py-12 md:py-20 md:px-20 flex flex-col justify-around lg:flex-row gap-10 items-center'>
       {/* Image Section */}
       <div className="relative w-full lg:w-1/3">
-        <Image src="/about/aboutimg.jpg" alt="about" width={200} height={100} className='rounded-t-full w-full object-cover' />
+        <Image src="/about/aboutimg.jpg" alt="aimaire inc about" width={200} height={100} className='rounded-t-full w-full object-cover' />
         <div className="bg-yellow-400 text-white hover:bg-yellow-700 duration-700 p-8 w-[200px] h-[200px] text-center rounded-t-full border-8 absolute -bottom-10 right-1/2 translate-x-1/2 lg:translate-x-0 lg:bottom-16 lg:right-[-5rem] border-white flex flex-col justify-center items-center">
         
         </div>

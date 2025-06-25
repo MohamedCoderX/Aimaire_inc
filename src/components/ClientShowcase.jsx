@@ -57,7 +57,7 @@ const ClientShowcase = () => {
               <div className="w-full h-24 sm:h-28 flex items-center justify-center mb-4">
                 <Image
                   src={client.logo}
-                  alt={client.name}
+                  alt={`aimaire inc ${client.name}`}
                   width={100}
                   height={100}
                   loading="lazy"

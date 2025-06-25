@@ -13,7 +13,7 @@ export default function Hero({ title, description ,image , image2}) {
           <div className="relative w-[85%] max-w-md rounded-3xl overflow-hidden shadow-xl border border-gray-100">
             <Image
               src={image}
-              alt="Retail Display"
+              alt="aimaire inc Retail Display"
               width={600}
               height={400}
               className="w-full h-auto object-cover"
@@ -24,7 +24,7 @@ export default function Hero({ title, description ,image , image2}) {
           <div className="absolute -bottom-8 -left-8 w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg bg-white">
             <Image
               src={image2}
-              alt="Shelving Detail"
+              alt="aimaire inc Shelving Detail"
               fill
               className="object-cover"
             />

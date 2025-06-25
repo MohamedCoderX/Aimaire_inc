@@ -148,7 +148,7 @@ const Testimonial = () => {
         <div className="w-full md:w-1/2 h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-md relative">
           <Image
             src="/testimonial.jpeg"
-            alt="Interior Setup"
+            alt="aimaire inc Interior Setup"
             layout="fill"
             objectFit="cover"
             className="rounded-xl relative"

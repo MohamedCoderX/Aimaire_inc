@@ -139,7 +139,7 @@ const ServiceShowcase = () => {
                 <div className="relative h-60 w-full">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`aimaire inc ${service.title}`}
                     fill
                     loading="lazy"
                     className="object-cover transition group-hover:scale-105 duration-300"

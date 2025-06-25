@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
             >
               <Image
                 src="/about/img6.png"
-                alt="Worker"
+                alt="aimaire inc Worker"
                 fill
                 className="object-cover rounded-t-full border-4 border-white shadow-lg"
               />
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
             >
               <Image
                 src="/about/img2.png"
-                alt="Manager"
+                alt="aimaire inc Manager"
                 fill
                 className="object-cover rounded-t-full border-4 border-white shadow-lg"
               />

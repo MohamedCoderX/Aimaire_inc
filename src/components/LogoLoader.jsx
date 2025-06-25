@@ -21,7 +21,7 @@ const LogoLoader = () => {
       >
         <Image
           src="/logo.png"
-          alt="Aimaire Logo"
+          alt="Aimaire inc Logo"
           width={200}
           height={200}
           className="rounded-full"

@@ -46,7 +46,7 @@ const Faq = () => {
                 <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
                     <Image
                         src="/about/img5.png" Replace with your actual image path
-                        alt="Commercial kitchen setup"
+                        alt="aimaire inc Commercial kitchen setup"
                         fill
                         className="rounded-t-[50%] object-cover w-full h-full"
                     />

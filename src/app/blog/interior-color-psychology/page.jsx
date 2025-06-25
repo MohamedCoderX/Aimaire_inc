@@ -33,7 +33,7 @@ export default function Page() {
           src="/blog/model-cc.jpg"
           width={800}
           height={600}
-          alt="Colorful interior"
+          alt="aimaire inc Colorful interior"
           className="rounded-xl mb-8 w-full object-cover shadow-md"
         />
 
@@ -75,7 +75,7 @@ export default function Page() {
         {/* Second Image */}
         <img
           src='/blog/model-cc1.png'
-          alt="Business color layout"
+          alt="aimaire inc Business color layout"
           className="rounded-xl w-full object-cover shadow-md mt-4 mb-10"
         />
 

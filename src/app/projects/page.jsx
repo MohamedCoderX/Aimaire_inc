@@ -90,10 +90,10 @@ const Page = () => {
             <div className="relative w-full h-72">
               <Image
                 src={project.image}
-                alt={project.title}
+                alt={`aimaire inc ${project.title}`}
                 fill
                 loading='lazy'
-                className="object-cover hover:scale-105 transition-transform duration-500"
+                className="object-contain hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="p-4 bg-white">

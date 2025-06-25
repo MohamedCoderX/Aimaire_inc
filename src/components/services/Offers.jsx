@@ -31,9 +31,9 @@ const Offers = ({offers,title,description}) => {
             <div className="relative aspect-[4/3] w-full">
               <Image
                 src={step.image}
-                alt={step.title}
+                alt={`aimaire inc ${step.title}`}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div className="p-5 text-center">

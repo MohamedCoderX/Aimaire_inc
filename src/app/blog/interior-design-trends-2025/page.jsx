@@ -33,7 +33,7 @@ export default function Page() {
           src="/blog/model-ss.jpg"
           width={800}
         height={600}
-          alt="Modern bedroom"
+          alt="aimaire inc Modern bedroom"
           className="rounded-xl mb-8 w-full object-cover shadow-md"
         />
 
@@ -77,7 +77,7 @@ export default function Page() {
         {/* Second Image */}
         <img
           src='/blog/model-ss1.jpg'
-          alt="Dining design"
+          alt="aimaire inc Dining design"
           fill
           className="rounded-xl w-full object-cover shadow-md mt-4"
         />

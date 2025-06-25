@@ -30,7 +30,7 @@ export default function Page() {
           src="/blog/model-kk.jpeg"
           width={800}
           height={600}
-          alt="Stylish commercial kitchen"
+          alt="Aimaire inc Stylish commercial kitchen"
           className="rounded-xl mb-8 w-full object-cover shadow-md"
         />
 
@@ -70,7 +70,7 @@ export default function Page() {
           src="/blog/model-kk1.jpg"
           width={800}
           height={600}
-          alt="Kitchen design aesthetic"
+          alt="Aimaire Kitchen design aesthetic"
           className="rounded-xl mb-8 w-full object-cover shadow-md"
         />
 

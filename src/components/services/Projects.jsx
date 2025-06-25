@@ -23,8 +23,8 @@ const Projects = ({ projects, sectionTitle, sectionDescription }) => {
             >
               <img
                 src={project.image}
-                alt={project.title}
-                className="w-full h-56 object-cover rounded-t-xl"
+                alt={`aimaire inc ${project.title}`}
+                className="w-full h-56 object-contain rounded-t-xl"
               />
               
             </div>

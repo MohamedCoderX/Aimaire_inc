@@ -7,7 +7,7 @@ const DisplayBanner = ({ title, description, image }) => {
       {/* Background Image */}
       <Image
         src={image}
-        alt="Display Models Banner"
+        alt="aimaire inc Display Models Banner"
         fill
         priority
         className="object-cover object-center"

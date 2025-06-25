@@ -10,7 +10,7 @@ const CTABanner = () => {
       {/* Background Image */}
       <Image
         src="/calltoaction.jpeg"
-        alt="CTA Banner Background"
+        alt="aimaire inc CTA Banner Background"
         fill
         priority
         className="object-cover object-center"
