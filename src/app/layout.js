@@ -18,17 +18,26 @@ const openSans = Open_Sans({
 
 export const metadata = {
   title: 'Aimaire Inc | Bakery, Kitchen Equipment & Franchise Setup Manufacturer in India',
-  description: 'Aimaire Inc is a trusted provider of bakery counters, kitchen equipment, and full franchise setups with expert interior design across India.',
+  description: 'Aimaire Inc — India’s trusted provider of bakery display counters, commercial kitchen equipment, and full franchise setup services with expert interior design.',
   keywords: [
     'Aimaire Inc',
+    'Aimaire',
+    'Aimaire India',
+    'Aimaire Bakery Setup',
     'Bakery Display Counters',
     'Commercial Kitchen Equipment',
     'Franchise Setup India',
     'Interior Design Salem',
     'Climaire Alternative',
-    'Display Racks',
-    'Kitchen Setup Bangalore',
+    'Retail Display Manufacturer',
+    'Bakery Equipment India',
+    'Restaurant Setup Company',
+    'Modular Kitchen for Cafe',
   ],
+  authors: [{ name: 'Aimaire Inc', url: 'https://aimaireinc.com' }],
+  alternates: {
+    canonical: 'https://aimaireinc.com',
+  },
   openGraph: {
     title: 'Aimaire Inc | Bakery & Kitchen Setup Experts',
     description: 'Top manufacturer of bakery displays, retail counters, and commercial setups in India. Explore our custom display solutions.',
@@ -51,8 +60,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="canonical" href="https://aimaireinc.com" />
+        <meta name="author" content="Aimaire Inc" />
+      </head>
+
       <body className={`${montserrat.variable} ${openSans.variable} antialiased bg-white text-[#292a62]`}>
-        {/* Structured Data */}
+        {/* Structured Data for LocalBusiness */}
         <Script
           type="application/ld+json"
           id="structured-data"
@@ -62,6 +76,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Aimaire Inc",
+              alternateName: "Aimaire Bakery Franchise Solutions",
               description:
                 "Bakery & commercial kitchen equipment manufacturer offering display counters, franchise design, and setup services in India.",
               image: "https://aimaireinc.com/logo.png",
@@ -92,7 +107,6 @@ export default function RootLayout({ children }) {
 
         <Nav />
         <Sidebar />
-
         <main>{children}</main>
       </body>
     </html>
