@@ -89,7 +89,7 @@ export default function Footer() {
           <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/aimaireinc"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white/10 rounded-full hover:bg-yellow-300 hover:text-black transition"
@@ -97,29 +97,29 @@ export default function Footer() {
               <FaFacebookF className="w-5 h-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/aimaire_inc"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white/10 rounded-full hover:bg-yellow-300 hover:text-black transition"
             >
               <FaInstagram className="w-5 h-5" />
             </a>
-            <a
+            {/* <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white/10 rounded-full hover:bg-yellow-300 hover:text-black transition"
             >
               <FaLinkedinIn className="w-5 h-5" />
-            </a>
-            <a
+            </a> */}
+            {/* <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white/10 rounded-full hover:bg-yellow-300 hover:text-black transition"
             >
               <FaTwitter className="w-5 h-5" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
