@@ -47,7 +47,7 @@ const Contactus = () => {
               <span className="bg-gray-100 p-2 rounded-full"><HugeiconsIcon icon={CallIcon} /></span>
               <div>
                 <p className="font-semibold text-lg">PHONE NUMBER</p>
-                <p className="text-gray-700"> 9500721544 / 9092038636</p>
+                <p className="text-gray-700">  +91 9092038636 / 9500721544 </p>
               </div>
             </div>
 
